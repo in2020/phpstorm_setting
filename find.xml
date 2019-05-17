@@ -1,8 +1,8 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="only md excluded cache vendor errors" />
-    <option name="defaultScopeName" value="only md excluded cache vendor errors" />
-    <option name="SEARCH_SCOPE" value="only md excluded cache vendor errors" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="SEARCH_SCOPE" value="All Places" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
     <mask>*.jsp</mask>
