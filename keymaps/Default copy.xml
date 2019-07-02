@@ -126,9 +126,6 @@
   <action id="RunJsbtTask" />
   <action id="SavaAs" />
   <action id="ShowBookmarks" />
-  <action id="SplitHorizontally">
-    <keyboard-shortcut first-keystroke="alt h" />
-  </action>
   <action id="SplitVertically">
     <keyboard-shortcut first-keystroke="alt v" />
   </action>
@@ -147,6 +144,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl s" />
   </action>
   <action id="Vcs.ReformatCommitMessage" />
+  <action id="Vcs.ShowTabbedFileHistory">
+    <keyboard-shortcut first-keystroke="alt h" />
+  </action>
   <action id="Vcs.UpdateProject" />
   <action id="com.dubreuia.core.SaveActionShortcutManager" />
   <action id="com.dubreuia.core.action.ShortcutAction" />
