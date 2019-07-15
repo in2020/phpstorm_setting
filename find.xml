@@ -3,7 +3,9 @@
     <option name="caseSensitive" value="true" />
     <option name="customScope" value="onlym excluded md" />
     <option name="defaultScopeName" value="onlym excluded md" />
+    <option name="wholeWordsOnly" value="true" />
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
+    <option name="WHOLE_WORDS_ONLY" value="true" />
     <option name="SEARCH_SCOPE" value="onlym excluded md" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
