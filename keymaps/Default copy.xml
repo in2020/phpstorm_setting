@@ -23,6 +23,9 @@
   <action id="ActivateVersionControlToolWindow">
     <keyboard-shortcut first-keystroke="alt 5" />
   </action>
+  <action id="Annotate">
+    <keyboard-shortcut first-keystroke="alt a" />
+  </action>
   <action id="ChangesView.AddUnversioned" />
   <action id="CloseActiveTab" />
   <action id="CloseAllEditorsButActive">
@@ -107,9 +110,6 @@
     <keyboard-shortcut first-keystroke="ctrl numpad2" />
   </action>
   <action id="ParameterInfo" />
-  <action id="PhpCSFixerAddToIgnored">
-    <keyboard-shortcut first-keystroke="alt a" />
-  </action>
   <action id="PhpListenDebugAction">
     <keyboard-shortcut first-keystroke="shift ctrl o" />
   </action>
