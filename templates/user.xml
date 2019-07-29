@@ -187,4 +187,10 @@
       <option name="HTML_TEXT" value="true" />
     </context>
   </template>
+  <template name="Database::getIncatance" value="Database::getInstance()-&gt;" description="Database::getIncatance" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
 </templateSet>
