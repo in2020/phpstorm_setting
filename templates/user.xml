@@ -1,0 +1,185 @@
+<templateSet group="user">
+  <template name="whilehtml" value="&lt;? while ($data = $db-&gt;fetch($RES$)){ ?&gt;&#10;    $END$&#10;&lt;? } ?&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="RES" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="foreachhtml" value="&lt;? foreach($ARRAY$ as $k =&gt; $ITEM$){ ?&gt;&#10;    $END$&#10;&lt;? } ?&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="phpSuggestVariableName()" defaultValue="$item" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="larequest" value="public function $FNNAME$($ARG$, Request $request)&#10;{&#10;    throwUnlessValidator(compact('$ARG_$'), [&#10;        '$ARG_$' =&gt; 'required | digits:9 | exists:mini_category,category,hidden,!1',&#10;    ]); //-&gt; 공통 예외처리 로 만들어야 될듯&#10;&#10;    $RETURN$ = $MODEL$;&#10;&#10;    return $this-&gt;response([&#10;        'data' =&gt; [&#10;            '$VAR$'    =&gt; $RETURN$,&#10;        ],&#10;    ]);&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="FNNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG_" expression="phpSuggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="lamodelget" value="$VAR$ = $MODEL$::with([&#10;                '$RELATION$' =&gt; function ($query) {&#10;                    $query-&gt;where('$WHERE_COL$', $WHERE_VAL$)&#10;                        -&gt;select(['$SELECT_COL$']);&#10;                },&#10;            ])-&gt;where('$WHERE_COL1$', $WHERE_VAL1$)            &#10;            -&gt;orderBy('$ORDERBY_COL$')&#10;            -&gt;get();" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="phpSuggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RELATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WHERE_COL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WHERE_VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECT_COL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WHERE_COL1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WHERE_VAL1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDERBY_COL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Expression" value="true" />
+    </context>
+  </template>
+  <template name="join" value="join('$TABLE$', '$COL1$','=','$COL2$')" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COL1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COL2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="leftJoin" value="leftJoin('$TABLE$','$COL1$','=','$COL2$')" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COL1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COL2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP Expression" value="false" />
+      <option name="PHP Statement" value="false" />
+      <option name="PHP String Literal" value="false" />
+    </context>
+  </template>
+  <template name="where" value="where('$COL$',$VAL$)" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="COL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP Expression" value="false" />
+      <option name="PHP Statement" value="false" />
+      <option name="PHP String Literal" value="false" />
+    </context>
+  </template>
+  <template name="lahasmany" value="public function $FUNC$()&#10;    {&#10;        return $this-&gt;hasMany('$TABLE$','$FK$','$PK$');&#10;    }" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="FUNC" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="lahasone" value="public function $FUNC$()&#10;    {&#10;        return $this-&gt;hasOne('$TABLE$','$FK$','$PK$');&#10;    }" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="FUNC" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FK" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="ajax" value="$.ajax({&#10;        type: &quot;POST&quot;,&#10;        async: true,&#10;        cache: false,&#10;        url: &quot;ajax_url&quot;,&#10;        data: formData,&#10;        dataType:'json',&#10;        success: function(response){&#10;            &#10;        }&#10;        ,error: function(response) {&#10;            alert('error');&#10;        }&#10;    });" description="jquery ajax" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="json_header" value="header (&quot;Cache-Control: no-cache, must-revalidate&quot;);&#10;header (&quot;Pragma: no-cache&quot;);&#10;header('Content-Type: application/json; charset=utf-8');" description="php json no cache header" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="hbs_script" value="&lt;script type=&quot;text/javascript&quot; src=&quot;&lt;?=$MOBILE_ROOT_URL?&gt;/common/js/handlebars-v4.0.11.js&quot;&gt;&lt;/script&gt;&#10;&lt;script id=&quot;tmpl_list&quot; type=&quot;text/x-handlebars-template&quot;&gt;&#10;&lt;/script&gt;" description="handlebard script tag" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="pub__construct" value="&#10;public function __construct($ARGS$)&#10;{&#10;    $CONTENTS$&#10;}" description="class construct" toReformat="true" toShortenFQNames="true">
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENTS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="include_exec.dbconn" value="include_once($_SERVER['DOCUMENT_ROOT'].&quot;/lib/exec.dbconn.php&quot;);" description="include db" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="LoginManagement" value="LoginManagement::is_safe_device_sn_access($dbconn, $_REQUEST['device_sn'], $account_id, $session_id, $logout_by_other,$out_error_code);" description="모바일 로그인 체크" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="&lt;? if()" value="&lt;? if(){?&gt;&#10;                        &#10;                    &lt;? } ?&gt;" description="php if injection to html" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="twig_display" value="        $this-&gt;twig-&gt;display($this-&gt;getTwigDirectory() . '/stay_cities', [&#10;            'head' =&gt; [&#10;                'title'       =&gt; '숙소검색 - 민다',&#10;                'description' =&gt; '전세계 숙소에서 트립까지, 해외 자유여행의 모든 것! 한인민박, 현지투어, 가이드 투어, 여행정보, 교통패스까지 모두 민다에서 준비하세요.',&#10;                'url'         =&gt; &quot;https://{$_SERVER['SERVER_NAME']}{$_SERVER['REQUEST_URI']}&quot;,&#10;            ],&#10;        ]);" description="twig_display" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="jsonfunction" value="/**&#10;     * Router for json/{method} (ex. [GET] /json/product -&gt; $this-&gt;getProductRequest() called)&#10;     *&#10;     * @param string $method&#10;     *&#10;     * @return mixed&#10;     */&#10;    public function json(string $method = 'index')&#10;    {&#10;        $this-&gt;validate-&gt;json();&#10;&#10;        return $this-&gt;{strtolower($this-&gt;input-&gt;post('_method')) . ucfirst($method) . 'Request'}();&#10;    }" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="&lt;script_javascript" value="&lt;script type=&quot;text/javascript&quot;&gt;&#10;    &#10;&lt;/script&gt;" description="javascript tag" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="new_vue" value="var vm = new Vue({&#10;        el: '#app',&#10;        data: {&#10;            $DATA$&#10;        },        &#10;        watch: {&#10;        &#10;        },&#10;        methods: {&#10;&#10;        },&#10;        computed: {&#10;&#10;        },&#10;        components: {&#10;            &#10;        },&#10;        created: function(){},&#10;        mounted: function(){}&#10;    });" description="new vue" toReformat="true" toShortenFQNames="true">
+    <variable name="DATA" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="vue_component" value="Vue.component('$NAME$', {&#10;        template: '',&#10;        data() {&#10;            return {&#10;                $DATA$            &#10;            }&#10;        },&#10;        watch: {},&#10;        methods: {},&#10;        computed: {},        &#10;        created: function() {},&#10;        mounted: function() {},&#10;    });" description="Register vue component" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DATA" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ES6_EXPRESSION" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="it()" value="it('$NAME$', null);" description="javascript test it function" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="VUE_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="describe()" value="describe('$NAME$', ()=&gt; {&#10;   $BODY$&#10;});" description="javascript test describe" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BODY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="VUE_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="Database::table" value="Database::table('')-&gt;where('','');" description="database" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+    </context>
+  </template>
+</templateSet>

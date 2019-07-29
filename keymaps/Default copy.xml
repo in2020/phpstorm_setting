@@ -125,6 +125,9 @@
   </action>
   <action id="RunJsbtTask" />
   <action id="SavaAs" />
+  <action id="SaveAsTemplate">
+    <keyboard-shortcut first-keystroke="alt t" />
+  </action>
   <action id="ShowBookmarks" />
   <action id="SplitVertically">
     <keyboard-shortcut first-keystroke="alt v" />
