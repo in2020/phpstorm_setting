@@ -182,15 +182,21 @@
       <option name="PHP Expression" value="true" />
     </context>
   </template>
-  <template name="&lt;script_handlebars" value="&lt;script id=&quot;template&quot; type=&quot;text/x-handlebars-template&quot;&gt;&#10;&lt;/script&gt;" description="handlebars template script tag" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="true" />
-    </context>
-  </template>
   <template name="Database::getIncatance" value="Database::getInstance()-&gt;" description="Database::getIncatance" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP Expression" value="true" />
       <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="require_autoload" value="require $_SERVER['DOCUMENT_ROOT'] . '/core/minda-autoload.php';" description="require autoload" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="&lt;script_handlebars" value="&lt;script id=&quot;template&quot; type=&quot;text/x-handlebars-template&quot;&gt;&#10;&lt;/script&gt;" description="handlebars template script tag" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
     </context>
   </template>
 </templateSet>

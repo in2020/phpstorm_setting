@@ -1,0 +1,7 @@
+<templateSet group="HTML/XML">
+  <template name="&lt;script_handlebars" value="&lt;script id=&quot;template&quot; type=&quot;text/x-handlebars-template&quot;&gt;&#10;&lt;/script&gt;" description="handlebars template script tag" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>
