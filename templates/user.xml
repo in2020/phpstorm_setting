@@ -199,4 +199,10 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="if_function" value="if (! function_exists('hasStayManagerAuthorization')) {&#10;    function hasStayManagerAuthorization()&#10;    {&#10;    }&#10;}" description="if exists function" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
 </templateSet>
