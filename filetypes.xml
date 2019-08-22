@@ -1,12 +1,12 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping ext="tpe" type="DBN-PSQL" />
+      <mapping ext="pks" type="DBN-PSQL" />
       <mapping ext="prc" type="DBN-PSQL" />
       <mapping ext="trg" type="DBN-PSQL" />
       <mapping ext="fnc" type="DBN-PSQL" />
       <mapping ext="tps" type="DBN-PSQL" />
-      <mapping ext="pks" type="DBN-PSQL" />
+      <mapping ext="tpe" type="DBN-PSQL" />
       <mapping ext="tpb" type="DBN-PSQL" />
       <mapping ext="pkg" type="DBN-PSQL" />
       <mapping ext="pkb" type="DBN-PSQL" />
@@ -14,27 +14,30 @@
       <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="*.js.flow" type="Flow" />
       <removed_mapping ext="htm" approved="true" type="HTML" />
-      <mapping ext="html" type="PHP" />
       <mapping ext="htm" type="PHP" />
-      <mapping pattern=".gitingore" type="PLAIN_TEXT" />
-      <mapping pattern="popular" type="PLAIN_TEXT" />
+      <mapping ext="html" type="PHP" />
       <mapping pattern="favorite" type="PLAIN_TEXT" />
-      <mapping pattern="temp" type="PLAIN_TEXT" />
+      <mapping pattern="popular" type="PLAIN_TEXT" />
       <mapping pattern="pp_cli" type="PLAIN_TEXT" />
+      <mapping pattern=".gitingore" type="PLAIN_TEXT" />
+      <mapping pattern="temp" type="PLAIN_TEXT" />
       <mapping ext="tiwg" type="PLAIN_TEXT" />
       <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="html" approved="true" type="Svelte" />
-      <mapping pattern="stays_map_marker_controller" type="Twig" />
       <mapping pattern="stays_storage" type="Twig" />
+      <mapping pattern="stays_map_marker_controller" type="Twig" />
       <mapping pattern="ready-footer" type="Twig" />
       <removed_mapping ext="htm" approved="true" type="HTML" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="babelrc" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="dockerfile" approved="true" type="textmate" />
+      <removed_mapping ext="makefile" approved="true" type="textmate" />
       <removed_mapping ext="html" approved="true" type="HTML" />
       <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="snakefile" approved="true" type="textmate" />
     </extensionMap>
   </component>
 </application>
