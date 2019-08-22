@@ -3,6 +3,7 @@
     <option name="customScope" value="m exclude md" />
     <option name="defaultScopeName" value="m exclude md" />
     <option name="SEARCH_SCOPE" value="m exclude md" />
+    <option name="FILE_MASK" value="*.html" />
     <mask>*.properties</mask>
     <mask>*.jsp</mask>
     <mask>*.xml</mask>
@@ -12,7 +13,7 @@
     <mask>*.js</mask>
     <mask>*.twig</mask>
     <mask>*.css</mask>
-    <mask>*.html</mask>
     <mask>*.php</mask>
+    <mask>*.html</mask>
   </component>
 </application>
