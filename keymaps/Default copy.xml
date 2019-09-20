@@ -125,6 +125,7 @@
   </action>
   <action id="RunJsbtTask" />
   <action id="SavaAs" />
+  <action id="SaveAs" />
   <action id="SaveAsTemplate">
     <keyboard-shortcut first-keystroke="alt t" />
   </action>
