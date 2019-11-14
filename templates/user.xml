@@ -126,6 +126,7 @@
   <template name="&lt;? if()" value="&lt;? if(){?&gt;&#10;                        &#10;                    &lt;? } ?&gt;" description="php if injection to html" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
     </context>
   </template>
   <template name="twig_display" value="        $this-&gt;twig-&gt;display($this-&gt;getTwigDirectory() . '/stay_cities', [&#10;            'head' =&gt; [&#10;                'title'       =&gt; '숙소검색 - 민다',&#10;                'description' =&gt; '전세계 숙소에서 트립까지, 해외 자유여행의 모든 것! 한인민박, 현지투어, 가이드 투어, 여행정보, 교통패스까지 모두 민다에서 준비하세요.',&#10;                'url'         =&gt; &quot;https://{$_SERVER['SERVER_NAME']}{$_SERVER['REQUEST_URI']}&quot;,&#10;            ],&#10;        ]);" description="twig_display" toReformat="true" toShortenFQNames="true">
@@ -203,6 +204,18 @@
     <context>
       <option name="PHP Expression" value="true" />
       <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="&lt;? foreach(" value="&lt;? foreach($COND$){ ?&gt; $MARKUP$ &lt;? } ?&gt;" description="foreach on html" toReformat="true" toShortenFQNames="true">
+    <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MARKUP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP Interface Member" value="false" />
+      <option name="PHP Trait Member" value="false" />
     </context>
   </template>
 </templateSet>
