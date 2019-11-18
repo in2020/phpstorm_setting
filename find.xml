@@ -11,10 +11,10 @@
     <mask>*.mxml</mask>
     <mask>*.js</mask>
     <mask>*.twig</mask>
-    <mask>*.scss</mask>
     <mask>*.hbs</mask>
     <mask>*.php</mask>
     <mask>*.html</mask>
     <mask>*.css</mask>
+    <mask>*.scss</mask>
   </component>
 </application>
