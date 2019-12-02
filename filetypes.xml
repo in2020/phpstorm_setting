@@ -1,25 +1,23 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping pattern="*.js.flow" type="Flow" />
-      <mapping pattern="*.js.flow" type="Flow" />
       <removed_mapping ext="htm" approved="true" type="HTML" />
-      <removed_mapping ext="html" approved="true" type="HTML" />
       <mapping ext="html" type="PHP" />
       <mapping ext="htm" type="PHP" />
-      <mapping pattern="awsIpRangeUpdateDate" type="PLAIN_TEXT" />
-      <mapping pattern="pp_cli" type="PLAIN_TEXT" />
       <mapping pattern="temp" type="PLAIN_TEXT" />
-      <mapping pattern=".gitingore" type="PLAIN_TEXT" />
-      <mapping pattern="favorite" type="PLAIN_TEXT" />
+      <mapping pattern="awsIpRangeUpdateDate" type="PLAIN_TEXT" />
       <mapping pattern="popular" type="PLAIN_TEXT" />
+      <mapping pattern="favorite" type="PLAIN_TEXT" />
+      <mapping pattern="pp_cli" type="PLAIN_TEXT" />
+      <mapping pattern=".gitingore" type="PLAIN_TEXT" />
       <mapping ext="tiwg" type="PLAIN_TEXT" />
+      <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
-      <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="html" approved="true" type="Svelte" />
       <mapping pattern="stays_storage" type="Twig" />
-      <mapping pattern="ready-footer" type="Twig" />
       <mapping pattern="stays_map_marker_controller" type="Twig" />
+      <mapping pattern="ready-footer" type="Twig" />
       <removed_mapping ext="htm" approved="true" type="HTML" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
