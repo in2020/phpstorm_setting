@@ -3,6 +3,7 @@
     <option name="customScope" value="exclude filelist md admin manager" />
     <option name="defaultScopeName" value="exclude filelist md admin manager" />
     <option name="SEARCH_SCOPE" value="exclude filelist md admin manager" />
+    <option name="FILE_MASK" value="*.twig" />
     <mask>*.properties</mask>
     <mask>*.jsp</mask>
     <mask>*.xml</mask>
@@ -10,11 +11,11 @@
     <mask>*.as</mask>
     <mask>*.mxml</mask>
     <mask>*.js</mask>
-    <mask>*.twig</mask>
     <mask>*.hbs</mask>
     <mask>*.html</mask>
     <mask>*.css</mask>
     <mask>*.scss</mask>
     <mask>*.php</mask>
+    <mask>*.twig</mask>
   </component>
 </application>
