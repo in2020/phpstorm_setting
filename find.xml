@@ -1,9 +1,9 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="exclude filelist md admin manager" />
-    <option name="defaultScopeName" value="exclude filelist md admin manager" />
-    <option name="SEARCH_SCOPE" value="exclude filelist md admin manager" />
-    <option name="FILE_MASK" value="*.twig" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.php" />
     <mask>*.properties</mask>
     <mask>*.jsp</mask>
     <mask>*.xml</mask>
@@ -15,7 +15,7 @@
     <mask>*.html</mask>
     <mask>*.css</mask>
     <mask>*.scss</mask>
-    <mask>*.php</mask>
     <mask>*.twig</mask>
+    <mask>*.php</mask>
   </component>
 </application>
