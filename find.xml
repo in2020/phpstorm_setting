@@ -1,8 +1,8 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="only m excluded cache vendor" />
-    <option name="defaultScopeName" value="only m excluded cache vendor" />
-    <option name="SEARCH_SCOPE" value="only m excluded cache vendor" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="SEARCH_SCOPE" value="All Places" />
     <mask>*.properties</mask>
     <mask>*.jsp</mask>
     <mask>*.xml</mask>
