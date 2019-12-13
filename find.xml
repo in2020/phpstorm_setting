@@ -1,8 +1,8 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="All Places" />
-    <option name="defaultScopeName" value="All Places" />
-    <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="customScope" value="exclude filelist md admin manager" />
+    <option name="defaultScopeName" value="exclude filelist md admin manager" />
+    <option name="SEARCH_SCOPE" value="exclude filelist md admin manager" />
     <mask>*.properties</mask>
     <mask>*.jsp</mask>
     <mask>*.xml</mask>
