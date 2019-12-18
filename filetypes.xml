@@ -12,7 +12,6 @@
       <mapping pattern=".gitingore" type="PLAIN_TEXT" />
       <mapping ext="tiwg" type="PLAIN_TEXT" />
       <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
-      <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="html" approved="true" type="Svelte" />
       <mapping pattern="stays_storage" type="Twig" />
