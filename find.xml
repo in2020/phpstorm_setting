@@ -1,8 +1,9 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="only traveler" />
-    <option name="defaultScopeName" value="only traveler" />
-    <option name="SEARCH_SCOPE" value="only traveler" />
+    <option name="customScope" value="exclude filelist cache skin" />
+    <option name="defaultScopeName" value="exclude filelist cache skin" />
+    <option name="SEARCH_SCOPE" value="exclude filelist cache skin" />
+    <option name="FILE_MASK" value="*.php" />
     <mask>*.properties</mask>
     <mask>*.jsp</mask>
     <mask>*.xml</mask>
@@ -12,9 +13,9 @@
     <mask>*.js</mask>
     <mask>*.hbs</mask>
     <mask>*.twig</mask>
-    <mask>*.php</mask>
     <mask>*.scss</mask>
     <mask>*.html</mask>
     <mask>*.css</mask>
+    <mask>*.php</mask>
   </component>
 </application>
