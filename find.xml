@@ -3,7 +3,6 @@
     <option name="customScope" value="exclude filelist cache skin" />
     <option name="defaultScopeName" value="exclude filelist cache skin" />
     <option name="SEARCH_SCOPE" value="exclude filelist cache skin" />
-    <option name="FILE_MASK" value="*.php" />
     <mask>*.properties</mask>
     <mask>*.jsp</mask>
     <mask>*.xml</mask>
