@@ -1,10 +1,10 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="only m excluded cache vendor" />
-    <option name="defaultScopeName" value="only m excluded cache vendor" />
+    <option name="customScope" value="only traveler" />
+    <option name="defaultScopeName" value="only traveler" />
     <option name="wholeWordsOnly" value="true" />
     <option name="WHOLE_WORDS_ONLY" value="true" />
-    <option name="SEARCH_SCOPE" value="only m excluded cache vendor" />
+    <option name="SEARCH_SCOPE" value="only traveler" />
     <mask>*.properties</mask>
     <mask>*.jsp</mask>
     <mask>*.xml</mask>
