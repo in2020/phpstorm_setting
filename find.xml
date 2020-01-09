@@ -1,8 +1,8 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="m exclude md" />
-    <option name="defaultScopeName" value="m exclude md" />
-    <option name="SEARCH_SCOPE" value="m exclude md" />
+    <option name="customScope" value="only traveler" />
+    <option name="defaultScopeName" value="only traveler" />
+    <option name="SEARCH_SCOPE" value="only traveler" />
     <mask>*.properties</mask>
     <mask>*.jsp</mask>
     <mask>*.xml</mask>
