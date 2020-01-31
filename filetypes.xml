@@ -2,14 +2,14 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <removed_mapping ext="htm" approved="true" type="HTML" />
-      <mapping ext="htm" type="PHP" />
       <mapping ext="html" type="PHP" />
+      <mapping ext="htm" type="PHP" />
+      <mapping pattern="temp" type="PLAIN_TEXT" />
       <mapping pattern="awsIpRangeUpdateDate" type="PLAIN_TEXT" />
       <mapping pattern="popular" type="PLAIN_TEXT" />
+      <mapping pattern="favorite" type="PLAIN_TEXT" />
       <mapping pattern="pp_cli" type="PLAIN_TEXT" />
       <mapping pattern=".gitingore" type="PLAIN_TEXT" />
-      <mapping pattern="favorite" type="PLAIN_TEXT" />
-      <mapping pattern="temp" type="PLAIN_TEXT" />
       <mapping ext="tiwg" type="PLAIN_TEXT" />
       <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
